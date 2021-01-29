@@ -1,3 +1,13 @@
+$colors: (
+    primary:#FE6102,
+    secondary:#0F1128,
+    third:#eee
+);
+
+
+
+
+
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 body{
     font-size:12px;
@@ -5,22 +15,22 @@ body{
     
 }
 
-.header{
+.header-main{
     
     
-    .jumbo{
-        background: url("../img/1.jpg");
-    background-size:cover;
-    background-position: 0 -100;
-    min-height:70%;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
-    z-index: -1;
-    }
+    // .jumbo{
+    //     background: url("../img/1.jpg");
+    // background-size:cover;
+    // background-position: 0 -100;
+    // min-height:70%;
+    // background-repeat: no-repeat;
+    // position: relative;
+    // overflow: hidden;
+    // z-index: -1;
+    // }
     .menum{
         background: #fff;
-        z-index: 6;
+        // z-index: 6;
 
        
         a{
@@ -37,9 +47,9 @@ body{
         .nav-item a {
             color: #000;
             text-decoration: none;
-            font: 20px Century Gothic;
+            font: 1.2em Century Gothic;
             margin: 0px 10px;
-            padding: 10px 10px;
+            // padding: 10px 10px;
             position: relative;
             z-index: 0;
         }
@@ -76,7 +86,7 @@ body{
 }
 .connector{
     height:80px;
-    width:800px;
+    width:60%;
     margin:0 auto;
     margin-top:-40px;
     background:#fff;
@@ -91,12 +101,39 @@ body{
         text-align: center;
         text-transform: uppercase;
         font-size:1.5em;
-        border-left: 3px solid fade-out($color: rgb(19, 139, 19), $amount: 0.4);
+        color:map-get($map: $colors, $key: third)
+
         
     }
     .element:first-child{
         border:none;
+        background-color: fade-out( map-get($colors,primary), 0);
+    }
+    .element:nth-child(2){
+        background-color: fade-out( map-get($colors,secondary), 0);
+    }
+    .element:nth-child(3){
+        background-color: fade-out( map-get($colors,primary), 0);
+    }
+    .element:last-child{
+        background-color:fade-out($color: map-get($colors,secondary), $amount: 0)
     }
    
     
 }
+
+
+
+// Carousel
+#owl-test{
+    z-index: -1;
+    margin-top:-10%;
+    max-height:600px;
+    overflow:hidden
+}
+#owl-test .owl-item img{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
