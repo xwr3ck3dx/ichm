@@ -1,0 +1,102 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+body{
+    font-size:12px;
+    // background:#333;
+    
+}
+
+.header{
+    
+    
+    .jumbo{
+        background: url("../img/1.jpg");
+    background-size:cover;
+    background-position: 0 -100;
+    min-height:70%;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    }
+    .menum{
+        background: #fff;
+        z-index: 6;
+
+       
+        a{
+    
+            color:#000 !important;
+            
+        }
+        .nav-item {
+            font-family: Century Gothic;
+            margin: 0 auto;
+            padding: 1em 2em;
+            text-align: center;
+        }
+        .nav-item a {
+            color: #000;
+            text-decoration: none;
+            font: 20px Century Gothic;
+            margin: 0px 10px;
+            padding: 10px 10px;
+            position: relative;
+            z-index: 0;
+        }
+        
+        
+        /* Top & Bottom Borders Out */
+        .topBotomBordersOut a:before, .topBotomBordersOut a:after {
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 2px;
+            background: #000;
+            content:"";
+            opacity: 0;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        .topBotomBordersOut a:before {
+            top: 0px;
+            transform: translateY(10px);
+        }
+        .topBotomBordersOut a:after {
+            bottom: 0px;
+            transform: translateY(-10px);
+        }
+        .topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    
+    
+    
+}
+.connector{
+    height:80px;
+    width:800px;
+    margin:0 auto;
+    margin-top:-40px;
+    background:#fff;
+    border-radius: 5px;
+    border:1px solid fade-out($color: #000000, $amount: 0.8);
+    box-shadow: 1px 1px 5px 1px fade-out($color: #000000, $amount: 0.7) ;
+    // position: relative;
+    .element{
+        // position:absolute;
+        // height:80px;
+        line-height: 80px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size:1.5em;
+        border-left: 3px solid fade-out($color: rgb(19, 139, 19), $amount: 0.4);
+        
+    }
+    .element:first-child{
+        border:none;
+    }
+   
+    
+}

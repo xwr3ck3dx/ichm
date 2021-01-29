@@ -1,1 +1,97 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+body {
+  font-size: 12px;
+}
+
+.header .jumbo {
+  background: url("../img/1.jpg");
+  background-size: cover;
+  background-position: 0 -100;
+  min-height: 70%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.header .menum {
+  background: #fff;
+  z-index: 6;
+  /* Top & Bottom Borders Out */
+}
+
+.header .menum a {
+  color: #000 !important;
+}
+
+.header .menum .nav-item {
+  font-family: Century Gothic;
+  margin: 0 auto;
+  padding: 1em 2em;
+  text-align: center;
+}
+
+.header .menum .nav-item a {
+  color: #000;
+  text-decoration: none;
+  font: 20px Century Gothic;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+}
+
+.header .menum .topBotomBordersOut a:before, .header .menum .topBotomBordersOut a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header .menum .topBotomBordersOut a:before {
+  top: 0px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.header .menum .topBotomBordersOut a:after {
+  bottom: 0px;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.header .menum .topBotomBordersOut a:hover:before, .header .menum .topBotomBordersOut a:hover:after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.connector {
+  height: 80px;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: -40px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.connector .element {
+  line-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  border-left: 3px solid rgba(19, 139, 19, 0.6);
+}
+
+.connector .element:first-child {
+  border: none;
+}
+/*# sourceMappingURL=main.css.map */
