@@ -1,6 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 body {
   font-size: 12px;
+  background: whitesmoke;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.header-main .logo {
+  max-width: 8em;
 }
 
 .header-main .menum {
@@ -22,10 +32,14 @@ body {
 .header-main .menum .nav-item a {
   color: #000;
   text-decoration: none;
-  font: 1.2em Century Gothic;
+  font: 1.8em Century Gothic;
   margin: 0px 10px;
   position: relative;
   z-index: 0;
+}
+
+.header-main .menum .topBotomBordersOut {
+  margin-left: 10em;
 }
 
 .header-main .menum .topBotomBordersOut a:before, .header-main .menum .topBotomBordersOut a:after {
@@ -59,46 +73,162 @@ body {
 }
 
 .connector {
-  height: 80px;
   width: 60%;
   margin: 0 auto;
-  margin-top: -40px;
+  margin-top: -7em;
   background: #fff;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 1px 7px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 7px 3px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .connector .element {
-  line-height: 80px;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.5em;
   color: #eee;
+  padding: 2em;
 }
 
-.connector .element:first-child {
-  border: none;
-  background-color: #fe6102;
+.connector .element img {
+  max-width: 4em;
 }
 
-.connector .element:nth-child(2) {
-  background-color: #0f1128;
+.connector .element .title {
+  line-height: 2.5em;
+  color: #0F1128;
 }
 
-.connector .element:nth-child(3) {
-  background-color: #fe6102;
+.connector .admission {
+  padding: 0;
 }
 
-.connector .element:last-child {
-  background-color: #0f1128;
+.connector .admission > .col-md-6 {
+  padding: 0;
+}
+
+.connector .admission .admission-txt {
+  padding: 3em 2em 3em 5em;
+}
+
+.connector .admission .admission-txt h2.title {
+  font-size: 3em;
+}
+
+.connector .admission .admission-txt p.text {
+  font-size: 1.5em;
+}
+
+.connector .admission .admission-txt .btn.btn-third {
+  background-color: #3DB166;
+  color: white;
+  padding: 1em;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about {
+  background: url("../img/3.jpg");
+  background-size: cover;
+  min-height: 25em;
+  background-position-y: 15%;
+  margin-top: 5em;
+}
+
+.about h2 {
+  color: #eee;
+  text-align: center;
+}
+
+.about h2 .img-fluid {
+  max-width: 5em;
+  margin-top: 0.5em;
+}
+
+.about .overlay {
+  background-color: rgba(15, 17, 40, 0.8);
+  min-height: 25em;
+}
+
+.about .content {
+  padding: 5em;
+  padding-top: 8em;
+  color: #eee;
+}
+
+.about .content .top-text {
+  font-size: 1.8em;
+  line-height: 1.3em;
+}
+
+.about .content .sub-text {
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+
+.bhm {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.bhm .row .col-md-6 {
+  padding: 0;
+}
+
+.bhm .row .left {
+  background: white;
+  padding: 3em 5em;
+}
+
+.bhm .row .left .title {
+  font-size: 3em;
+}
+
+.bhm .row .left .text {
+  font-size: 1.5em;
+}
+
+.employed {
+  margin-top: 3em;
+}
+
+.employed .content .item {
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 3em;
+}
+
+.employed .content .item .caption {
+  background: white;
+  padding: 1em 2em;
+}
+
+.employed .content .item .caption .title {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 0.2em;
+}
+
+.employed .content .item .caption .text {
+  font-size: 1.3em;
+}
+
+.footer-top {
+  background: #181818;
+}
+
+.footer-top #footer-owl .item {
+  padding: 2em 4em;
 }
 
 #owl-test {
   z-index: -1;
   margin-top: -10%;
-  max-height: 600px;
   overflow: hidden;
 }
 

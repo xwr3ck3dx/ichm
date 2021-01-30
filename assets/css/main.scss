@@ -1,7 +1,9 @@
 $colors: (
     primary:#FE6102,
     secondary:#0F1128,
-    third:#eee
+    third:#eee,
+    fourth:#679ADC,
+    fifth:#3DB166
 );
 
 
@@ -12,11 +14,16 @@ $colors: (
 body{
     font-size:12px;
     // background:#333;
-    
+    background:whitesmoke
 }
-
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
 .header-main{
-    
+    .logo{
+        max-width: 8em;
+    }
     
     // .jumbo{
     //     background: url("../img/1.jpg");
@@ -47,11 +54,14 @@ body{
         .nav-item a {
             color: #000;
             text-decoration: none;
-            font: 1.2em Century Gothic;
+            font: 1.8em Century Gothic;
             margin: 0px 10px;
             // padding: 10px 10px;
             position: relative;
             z-index: 0;
+        }
+        .topBotomBordersOut{
+            margin-left:10em;
         }
         
         
@@ -85,50 +95,169 @@ body{
     
 }
 .connector{
-    height:80px;
+    // height:80px;
     width:60%;
     margin:0 auto;
-    margin-top:-40px;
+    margin-top:-7em;
     background:#fff;
     border-radius: 5px;
     border:1px solid fade-out($color: #000000, $amount: 0.8);
-    box-shadow: 1px 1px 5px 1px fade-out($color: #000000, $amount: 0.7) ;
+    box-shadow: 1px 1px 7px 3px fade-out($color: #000000, $amount: 0.7) ;
     // position: relative;
+    z-index: 1;
     .element{
         // position:absolute;
         // height:80px;
-        line-height: 80px;
+        // line-height: 80px;
         text-align: center;
         text-transform: uppercase;
         font-size:1.5em;
-        color:map-get($map: $colors, $key: third)
-
+        color:map-get($map: $colors, $key: third);
+        padding:2em;
+        
+       
+            // float: left;
+            img{
+                max-width: 4em;
+            }
+            .title{
+                // padding-top:1em;
+                line-height: 2.5em;
+                color:map-get($map: $colors, $key: secondary)
+            }
+        
         
     }
-    .element:first-child{
-        border:none;
-        background-color: fade-out( map-get($colors,primary), 0);
-    }
-    .element:nth-child(2){
-        background-color: fade-out( map-get($colors,secondary), 0);
-    }
-    .element:nth-child(3){
-        background-color: fade-out( map-get($colors,primary), 0);
-    }
-    .element:last-child{
-        background-color:fade-out($color: map-get($colors,secondary), $amount: 0)
-    }
-   
+
+    // .element:first-child{
+    //     border:none;
+    //     background-color: fade-out( map-get($colors,primary), 0);
+    // }
+    // .element:nth-child(2){
+    //     background-color: fade-out( map-get($colors,secondary), 0);
+    // }
+    // .element:nth-child(3){
+    //     background-color: fade-out( map-get($colors,primary), 0);
+    // }
+    // .element:last-child{
+    //     background-color:fade-out($color: map-get($colors,secondary), $amount: 0)
+    // }
+   .admission{
+       padding:0;
+       & > .col-md-6{
+           padding:0
+       }
+       .admission-txt{
+           padding:3em 2em 3em 5em;
+           h2.title{
+               font-size:3em;
+           }
+           p.text{
+               font-size: 1.5em;
+           }
+           .btn.btn-third{
+               background-color: map-get($map: $colors, $key: fifth);
+               color:white;
+               padding:1em;
+           }
+       }
+
+   }
     
 }
+.content{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.about{
+    background: url("../img/3.jpg");
+    background-size: cover;
+    min-height:25em;
+    background-position-y: 15%;
+    margin-top:5em;
+    h2{
+        color: map-get($map: $colors, $key: third);
+        text-align: center;
+        .img-fluid{
+            max-width: 5em;
+            margin-top:0.5em
+        }
+    }
+    .overlay{
+        background-color: fade-out($color: map-get($colors,secondary), $amount: 0.2);
+        min-height:25em;
+    }
+    .content{
+        padding:5em;
+        padding-top:8em;
+        color: map-get($map: $colors, $key: third);
+        .top-text{
+            font-size:1.8em;
+            line-height: 1.3em;
+        }
+        .sub-text{
+            margin-top:1em;
+            font-size:1.3em;
+        }
+    }
+}
+.bhm{
+    margin-top:3em;
+    margin-bottom:3em;
+    .row{
+        .col-md-6{
+            padding:0
+        }
+        .left{
+            background:white;
+            padding:3em 5em;
+            .title{
+                font-size:3em;
+            }
+            .text{
+                font-size:1.5em;
+            }
+        }
+    }
+}
 
-
-
+.employed{
+    margin-top:3em;
+    // margin-bottom:3em;
+    .content{
+        .item{
+            // border-radius: 15px;
+            box-shadow: 1px 1px 5px fade-out($color: #000000, $amount: 0.7) ;
+            margin-bottom:3em;
+            .caption{
+                background:white;
+                padding:1em 2em;
+                .title{
+                    font-size:1.5em;
+                    font-weight: 500;
+                    margin-bottom:0.2em;
+                }
+                .text{
+                    font-size:1.3em;
+                }
+            }
+        }
+    }
+}
+.footer-top{
+    background:#181818;
+    #footer-owl{
+        .item{
+            padding:2em 4em;
+            
+        }
+    }
+}
 // Carousel
 #owl-test{
     z-index: -1;
     margin-top:-10%;
-    max-height:600px;
+    // max-height:600px;
     overflow:hidden
 }
 #owl-test .owl-item img{
