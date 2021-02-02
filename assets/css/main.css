@@ -10,7 +10,7 @@ body {
 }
 
 .header-main .logo {
-  max-width: 8em;
+  max-width: 6em;
 }
 
 .header-main .menum {
@@ -32,7 +32,7 @@ body {
 .header-main .menum .nav-item a {
   color: #000;
   text-decoration: none;
-  font: 1.8em Century Gothic;
+  font: 1.4em Century Gothic;
   margin: 0px 10px;
   position: relative;
   z-index: 0;
@@ -73,7 +73,7 @@ body {
 }
 
 .connector {
-  width: 60%;
+  max-width: 800px;
   margin: 0 auto;
   margin-top: -7em;
   background: #fff;
@@ -87,7 +87,7 @@ body {
 .connector .element {
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #eee;
   padding: 2em;
 }
@@ -110,21 +110,21 @@ body {
 }
 
 .connector .admission .admission-txt {
-  padding: 3em 2em 3em 5em;
+  padding: 1em 2em 1.2em 2em;
 }
 
 .connector .admission .admission-txt h2.title {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .connector .admission .admission-txt p.text {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .connector .admission .admission-txt .btn.btn-third {
   background-color: #3DB166;
   color: white;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .content {
@@ -218,6 +218,42 @@ body {
   font-size: 1.3em;
 }
 
+.testimonial .content .item .testimony {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.6em;
+  font-style: italic;
+}
+
+.testimonial .content .item .testimony blockquote {
+  border-left-color: #3DB166;
+  margin-bottom: 0;
+}
+
+.testimonial .content .item .testimony-user {
+  text-align: center;
+}
+
+.testimonial .content .item .testimony-user .name {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.testimonial .content .item .testimony-user .position {
+  font-size: 1.2em;
+}
+
+.testimonial .content .item .testimony-img {
+  max-width: 5em;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.testimonial .content .item .testimony-img img {
+  border-radius: 50px;
+}
+
 .footer-top {
   background: #181818;
 }
@@ -238,5 +274,61 @@ body {
   display: flex;
   width: 100%;
   height: auto;
+}
+
+.fixed-button {
+  background-color: #3DB166;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  position: fixed;
+  bottom: 0px;
+  right: 15px;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 1px 3px 1px #888888;
+          box-shadow: 1px 1px 3px 1px #888888;
+  font-size: 2em;
+}
+
+button.owl-prev:hover, button.owl-next:hover, button:focus {
+  color: inherit;
+  background: transparent;
+  outline: transparent;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent;
+  color: inherit;
+  text-decoration: none;
+  text-shadow: 1px 1px 5px white;
+}
+
+.owl-prev {
+  width: 30px;
+  height: 80px;
+  position: absolute;
+  top: 40%;
+  margin-left: -20px;
+  display: block !important;
+  border: 0px solid black;
+}
+
+.owl-next {
+  width: 30px;
+  height: 80px;
+  position: absolute;
+  top: 40%;
+  right: -25px;
+  display: block !important;
+  border: 0px solid black;
+}
+
+.owl-prev i, .owl-next i {
+  -webkit-transform: scale(1, 6);
+          transform: scale(1, 6);
+  color: #ccc;
 }
 /*# sourceMappingURL=main.css.map */

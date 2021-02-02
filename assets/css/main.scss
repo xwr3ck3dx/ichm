@@ -22,7 +22,7 @@ body{
 }
 .header-main{
     .logo{
-        max-width: 8em;
+        max-width: 6em;
     }
     
     // .jumbo{
@@ -54,7 +54,7 @@ body{
         .nav-item a {
             color: #000;
             text-decoration: none;
-            font: 1.8em Century Gothic;
+            font: 1.4em Century Gothic;
             margin: 0px 10px;
             // padding: 10px 10px;
             position: relative;
@@ -96,7 +96,8 @@ body{
 }
 .connector{
     // height:80px;
-    width:60%;
+    // width:60%;
+    max-width: 800px;
     margin:0 auto;
     margin-top:-7em;
     background:#fff;
@@ -111,7 +112,7 @@ body{
         // line-height: 80px;
         text-align: center;
         text-transform: uppercase;
-        font-size:1.5em;
+        font-size:1.2em;
         color:map-get($map: $colors, $key: third);
         padding:2em;
         
@@ -148,17 +149,17 @@ body{
            padding:0
        }
        .admission-txt{
-           padding:3em 2em 3em 5em;
+           padding:1em 2em 1.2em 2em;
            h2.title{
-               font-size:3em;
+               font-size:2em;
            }
            p.text{
-               font-size: 1.5em;
+               font-size: 1.2em;
            }
            .btn.btn-third{
                background-color: map-get($map: $colors, $key: fifth);
                color:white;
-               padding:1em;
+               padding:0.5em;
            }
        }
 
@@ -244,6 +245,46 @@ body{
         }
     }
 }
+.testimonial{
+    .content{
+        .item{
+            .testimony{
+                max-width: 800px;
+                margin: 0 auto;
+                text-align: center;
+                // padding:1em 10em 0em;
+                
+                font-size: 1.6em;
+                font-style: italic;
+                blockquote{
+                    border-left-color: map-get($map: $colors, $key: fifth);
+                    margin-bottom:0;
+                }
+            }
+            .testimony-user{
+                text-align: center;
+                
+                .name{
+                    font-size:1.4em;
+                    font-weight: 500;
+                }
+                .position{
+                    font-size:1.2em;
+                }
+                
+            }
+            .testimony-img{
+                max-width: 5em;
+                margin: 0 auto;
+                margin-top: 1em;
+                img{
+                border-radius: 50px;
+
+                }
+            }
+        }
+    }
+}
 .footer-top{
     background:#181818;
     #footer-owl{
@@ -266,3 +307,56 @@ body{
     height: auto;
 }
 
+
+
+.fixed-button {
+    background-color: map-get($map: $colors, $key: fifth);
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    position: fixed;
+    bottom: 0px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px 1px #888888;
+    font-size:2em;
+  }
+  
+ 
+
+
+
+button.owl-prev:hover,button.owl-next:hover, button:focus{
+    color: inherit;
+    background:transparent;
+    outline: transparent;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    color: inherit;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px white;
+}
+.owl-prev {
+    width: 30px;
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    margin-left: -20px;
+    display: block !important;
+    border:0px solid black;
+}
+
+.owl-next {
+    width: 30px;
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    right: -25px;
+    display: block !important;
+    border:0px solid black;
+}
+.owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}

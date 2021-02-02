@@ -128,6 +128,62 @@
             </div>
         </div>
     </div>
+
+    <div class="testimonial">
+        <div class="content">
+            <div class="testimonial-carousel owl-carousel owl-theme" id="testimonial-owl">
+                <div class="item">
+                    <div class="testimony">
+                        <blockquote>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste corporis, neque sed vel et eius nam tenetur facere omnis repudiandae, nobis quos alias necessitatibus eos odio! Ratione laudantium vero eveniet adipisci doloribus veritatis nesciunt quas molestias perspiciatis ad tempore laboriosam eum sequi provident magni eos, alias eius amet. Eaque!
+                        </blockquote>
+                    </div>
+                    <div class="testimony-img">
+                        <img src="assets/img/test-img.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="testimony-user">
+                        <span class="name">John Doe</span><br>
+                        <span class="position">Manager</span><br>
+                        <span class="organization">Angsoftech</span>
+                    </div>
+                   
+                </div>
+                <div class="item">
+                    <div class="testimony">
+                        <blockquote>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste corporis, neque sed vel et eius nam tenetur facere omnis repudiandae, nobis quos alias necessitatibus eos odio! Ratione laudantium vero eveniet adipisci doloribus veritatis nesciunt quas molestias perspiciatis ad tempore laboriosam eum sequi provident magni eos, alias eius amet. Eaque!
+                        </blockquote>
+                    </div>
+                    <div class="testimony-img">
+                        <img src="assets/img/test-img.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="testimony-user">
+                        <span class="name">John Doe</span><br>
+                        <span class="position">Manager</span><br>
+                        <span class="organization">Angsoftech</span>
+                    </div>
+                   
+                </div>
+                <div class="item">
+                    <div class="testimony">
+                        <blockquote>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste corporis, neque sed vel et eius nam tenetur facere omnis repudiandae, nobis quos alias necessitatibus eos odio! Ratione laudantium vero eveniet adipisci doloribus veritatis nesciunt quas molestias perspiciatis ad tempore laboriosam eum sequi provident magni eos, alias eius amet. Eaque!
+                        </blockquote>
+                    </div>
+                    <div class="testimony-img">
+                        <img src="assets/img/test-img.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="testimony-user">
+                        <span class="name">John Doe</span><br>
+                        <span class="position">Manager</span><br>
+                        <span class="organization">Angsoftech</span>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="employed" >
         <h2 class="title text-center">Lorem, ipsum dolor.</h2>
         <div class="content owl-carousel owl-theme" id="employed-owl">
@@ -162,7 +218,7 @@
             </div>
         </div>
         <div class="ichm-footer-wrapper ">
-            <div class="ichm-footer-container ichm-container clearfix">
+            <div class="ichm-footer-container ichm-container clearfix content">
                 <div class="ichm-footer-column ichm-item-pdlr ichm-column-15">
                     <div id="text-2" class="widget widget_text ichm-widget">			
                         <div class="textwidget">
@@ -254,14 +310,27 @@
     </footer>
 
 
+    <button class="fixed-button wobble" onclick="" type="button">
+        <i class="fas fa-comment"></i>
+      </button>
 
 
 
 
 
-
-
-    
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : 'your-app-id',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v9.0'
+          });
+        };
+      </script>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+          
+      
 
     <script>
         $(document).ready(function(){
@@ -300,6 +369,20 @@
                 }
             })
             
+            $("#testimonial-owl").owlCarousel({
+                nav : true, 
+                slideSpeed : 300,
+                paginationSpeed : 100,
+                singleItem: true,
+                pagination: false,
+                rewindSpeed: 500,
+                items:1,
+                autoplay:true,
+                autoplayTimeout:10000,
+                loop:true,
+                dots:false,
+                navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
+            });
             $('#footer-owl').owlCarousel({
                 loop:true,
                 margin:10,
