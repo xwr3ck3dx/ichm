@@ -58,9 +58,6 @@
             
         
     </div>
-
-
-
     <div class="parallax" data="/assets/img/3.jpg">
         <div class="overlay">
             <div class="title">
@@ -75,59 +72,79 @@
               </nav>
         </div>
     </div>
-<div class=" ">
-    
 
-    
-    <div class="col-md-12 gallery container">
-    <div class="row">
-    <hr>
-    
-        <div class="gal">
-        
-            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-        
-            <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
-            
-            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-                
-            <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
-            
-                
-            
-            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-            <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
-                
-            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-                
-            <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
-                
-            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-                    
-            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-            <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
-    
-            <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
-    
-            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-            <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
-                    
+    <div class="container contact-page" style="max-width: 900px;">
+        <div class="row quick-links">
+            <div class="col-md-4">
+                <a href="mailto:">
+                    <div class="item"><i class="fa fa-envelope-o"></i>
+                    <p class="sub">Mail</p>
+                    <div class="detail">
+                        test@example.com                                                
+                    </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="callto:">
+                    <div class="item"><i class="fa fa-phone"></i>
+                        <p class="sub">Phone</p>
+                        <div class="detail">
+                            9849123456                                                
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="">
+                    <div class="item"><i class="fa fa-map-marker"></i>
+                        <p class="sub">Mail</p>
+                        <div class="detail">
+                            test@example.com                                                
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
+        <form class="contact-form" id="main-form" action="https://nathm.edu.np/enquiry">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label form-label">NAME <span class="highlight">*</span></label>
+                        <input type="text" id="name" placeholder="Your Full Name" class="form-control form-input" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label form-label">EMAIL <span class="highlight">*</span></label>
+                        <input type="text" id="email" placeholder="Your Valid Email Id" class="form-control form-input" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label form-label">SUBJECT</label>
+                        <input type="text" id="subject" placeholder="Your Message Subject" class="form-control form-input" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label form-label">PHONE</label>
+                        <input type="text" id="phone" placeholder="Your Phone Number" class="form-control form-input" required>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="contact-question form-group">
+                        <label class="control-label form-label">HOW CAN WE HELP? <span class="highlight">*</span></label>
+                        <textarea id="msg" placeholder="Your Message" rows="5" class="form-control form-input" ></textarea></div>
+                </div>
+            </div>
+            <div class="contact-submit">
+                <button type="submit" id="send" class="btn btn-contact btn-green"><span>SUBMIT YOUR MESSAGE</span></button>
+            </div>
+        </form>
         
     </div>
-    </div>
-    </div>
-    
-
-
-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.4429032290323!2d85.32313241548157!3d27.672702833619596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c50daa2fb1%3A0x6f197fa38097b530!2sPatan%20Durbar%20Square!5e0!3m2!1sen!2snp!4v1612614059074!5m2!1sen!2snp" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
 
 
 
@@ -278,15 +295,6 @@
     <script>
         $(document).ready(function(){
             $('.parallax').css('background-image', 'url("' + $('.parallax').attr('data') + '")');
-            $('.gal img').addClass('pop');
-            $(".pop").on("click", function() {
-                
-                 $('#imagepreview').attr('src', $(this).attr('src')); // here asign the image to the modal when the user click the enlarge link
-                 $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
-            });
-            $('#closemodal').click(function(){
-                $('#imagemodal').modal('hide')
-            })
             $('#footer-owl').owlCarousel({
                 loop:true,
                 margin:10,
@@ -307,7 +315,8 @@
                         items:5
                     }
                 }
-            })
+            }) 
+            
         })
     </script>
 </body>

@@ -250,6 +250,10 @@ body {
   border-radius: 50px;
 }
 
+footer {
+  margin-top: 20px;
+}
+
 .footer-top {
   background: #181818;
 }
@@ -287,6 +291,10 @@ body {
   -webkit-box-shadow: 1px 1px 3px 1px #888888;
           box-shadow: 1px 1px 3px 1px #888888;
   font-size: 2em;
+}
+
+#owl-test {
+  max-height: 800px !important;
 }
 
 button.owl-prev:hover, button.owl-next:hover, button:focus {
@@ -346,5 +354,196 @@ button:focus {
 .navbar-toggler:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.dropdown-item {
+  font-size: 0.9em !important;
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax .overlay {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.parallax .overlay .title {
+  font-size: 4em;
+  color: #eee;
+  text-align: center;
+  padding: 0.8em 1em 0em 1em;
+  text-transform: uppercase;
+}
+
+.parallax .overlay .breadcrumbs {
+  text-align: center;
+}
+
+.parallax .overlay .breadcrumbs .breadcrumb {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+
+.parallax .overlay .breadcrumbs a {
+  color: white;
+}
+
+.gal {
+  -webkit-column-count: 3;
+  /* Chrome, Safari, Opera */
+  /* Firefox */
+  column-count: 3;
+}
+
+.gal img {
+  width: 100%;
+  padding: 7px 0;
+}
+
+@media (max-width: 500px) {
+  .gal {
+    -webkit-column-count: 1;
+    /* Chrome, Safari, Opera */
+    /* Firefox */
+    column-count: 1;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.modal-dialog {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.modal-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid #3c7dcf;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal-content #imagepreview {
+  height: 100%;
+  width: auto;
+}
+
+.modal-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  padding: 10px;
+  background: #3DB166;
+  border: 0;
+}
+
+.modal-title {
+  font-weight: 300;
+  font-size: 2em;
+  color: #fff;
+  line-height: 30px;
+}
+
+.modal-body {
+  position: absolute;
+  top: 50px;
+  bottom: 60px;
+  width: 100%;
+  font-weight: 300;
+  overflow: auto;
+  text-align: center;
+}
+
+.modal-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  padding: 10px;
+  background: #f1f3f5;
+}
+
+.contact-form {
+  margin-top: 2em;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group .form-label {
+  margin-bottom: 0;
+}
+
+.contact-form .contact-submit {
+  text-align: center;
+}
+
+.contact-form .contact-submit #send {
+  background: #3DB166;
+  color: white;
+}
+
+.contact-page {
+  margin-bottom: 20px;
+}
+
+.contact-page .quick-links {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.contact-page .quick-links a {
+  color: #0F1128;
+}
+
+.contact-page .quick-links .col-md-4 .item {
+  background: white;
+  padding: 2em 1em;
+}
+
+.contact-page .quick-links .col-md-4 .item .fa {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.contact-page .quick-links .col-md-4 .item .sub {
+  margin-bottom: 5px;
+}
+
+.contact-page .quick-links .col-md-4 .item:hover {
+  -webkit-box-shadow: 1px 3px 7px rgba(15, 17, 40, 0.2);
+          box-shadow: 1px 3px 7px rgba(15, 17, 40, 0.2);
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
