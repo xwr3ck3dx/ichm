@@ -19,24 +19,34 @@
     <div class="header-main">
         
             
-            <nav class="menum navbar navbar-light navbar-expand-md justify-content-center sticky-top">
+            <nav class="menum navbar navbar-light navbar-expand-md justify-content-center sticky-top" >
                 
-                <div class="container">
+                <div class="container-fluid"  style="max-width:1200px;margin:0 auto">
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" class="img-fluid logo" alt=""></a>
                     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar2">
                         <span><i class="fas fa-align-right iconStyle"></i></span>
                     </button>
-                <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
-                    <img src="assets/img/logo.png" class="logo" alt="">
-                    <ul class="topBotomBordersOut navbar-nav  text-center navbar-right">
-                        <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                        </li>
+                <div class="navbar-collapse collapse " id="collapsingNavbar2">
+                    
+                    <ul class="topBotomBordersOut navbar-nav  me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="#">Services</a> 
-                        <li class="nav-item"> <a class="nav-link" href="#">Portfolio</a> 
-                        <li class="nav-item"> <a class="nav-link" href="#">Blog</a> 
-                        <li class="nav-item"> <a class="nav-link" href="#">Contact</a> 
+                        <li class="nav-item"> <a class="nav-link" href="#">Services</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Portfolio</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Blog</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
                         </li>
+                        
                     </ul>
                 </div>
                 </div>   
@@ -45,14 +55,15 @@
             <!-- <div class="jumbo">
                 
             </div> -->
-            <div class="owl-carousel owl-theme" id="owl-test">
-                <img src="assets/img/1.jpg" alt="" class="item">
-                <img src="assets/img/1.jpg" alt="" class="item">
-                <img src="assets/img/1.jpg" alt="" class="item">
-                <img src="assets/img/1.jpg" alt="" class="item">
-                <img src="assets/img/1.jpg" alt="" class="item">
-                
-            </div>
+            
+        
+    </div>
+    <div class="owl-carousel owl-theme" id="owl-test" style="max-height:1200px">
+        <img src="assets/img/1.jpg" alt="" class="item">
+        <img src="assets/img/1.jpg" alt="" class="item">
+        <img src="assets/img/1.jpg" alt="" class="item">
+        <img src="assets/img/1.jpg" alt="" class="item">
+        <img src="assets/img/1.jpg" alt="" class="item">
         
     </div>
     <div class="connector row">
@@ -318,22 +329,17 @@
 
 
 
-    <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId            : 'your-app-id',
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v9.0'
-          });
-        };
-      </script>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-          
-      
+
 
     <script>
         $(document).ready(function(){
+            $('.dropdown').mouseenter(function(){
+                $('.dropdown-menu').addClass('show');
+            })
+            $('.dropdown-menu').mouseleave(function(){
+                $('.dropdown-menu').toggleClass('show');
+            })
+         
             $("#owl-test").owlCarousel({
                 navigation : false, 
                 slideSpeed : 300,
