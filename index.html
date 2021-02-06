@@ -13,13 +13,43 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/45e7ca279b.js" crossorigin="anonymous"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    
 </head>
 <body>
     <div class="header-main">
         
-            
-            <nav class="menum navbar navbar-light navbar-expand-md justify-content-center sticky-top" >
+            <div class="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                        </div>
+                        <div class="col-md-6" style="margin-right:0; margin-left:auto">
+                            <div class="email">
+                                <a href="mailto:">
+                                    <i class="topbar-icon fa fa-envelope-o"></i>
+                                    <span>test@example.com</span>
+                                </a>
+                            </div>
+                                <div class="contact">
+                                <a href="callto:">
+                                    <i class="topbar-icon fa fa-phone">
+
+                                    </i><span>9849123456</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-6 topbar-right text-right info-text3">
+                            <div class="group-sign-in">
+                                <a href="http://nathm.edu.np/webmail" class="login">Check mail</a>
+                                <a href="http://nathm.edu.np/downloads" class="login">Downloads</a>
+                                <a href="#" class="login">login</a>
+                                <a href="#" class="register">register</a>                        
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <nav class="menum navbar navbar-light navbar-expand-md justify-content-center sticky-top fixed-top" >
                 
                 <div class="container-fluid"  style="max-width:1200px;margin:0 auto">
                     <a class="navbar-brand" href="#"><img src="assets/img/logo.png" class="img-fluid logo" alt=""></a>
@@ -215,6 +245,7 @@
         </div>
         
     </div>
+    
     <footer>
         <div class="footer-top">
             <div class="content owl-carousel owl-theme" id="footer-owl">
@@ -327,6 +358,7 @@
 
 
       <!--Start of Tawk.to Script-->
+    <script src="assets/js/main.js"></script>
     <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
@@ -341,16 +373,13 @@
     <!--End of Tawk.to Script-->
 
 
+    
+
 
 
     <script>
         $(document).ready(function(){
-            $('.dropdown').mouseenter(function(){
-                $('.dropdown-menu').addClass('show');
-            })
-            $('.dropdown-menu').mouseleave(function(){
-                $('.dropdown-menu').toggleClass('show');
-            })
+           
          
             $("#owl-test").owlCarousel({
                 navigation : false, 

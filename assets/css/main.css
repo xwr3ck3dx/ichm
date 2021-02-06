@@ -546,4 +546,51 @@ button:focus {
           box-shadow: 1px 3px 7px rgba(15, 17, 40, 0.2);
   cursor: pointer;
 }
+
+.blog .card {
+  margin-bottom: 20px;
+}
+
+.blog .card .col-sm-3 {
+  padding: 0;
+}
+
+.topbar {
+  background: black;
+}
+
+.topbar .email, .topbar .contact {
+  float: right;
+  padding: 4px;
+  margin-right: 2em;
+}
+
+.topbar .email a, .topbar .contact a {
+  font-size: 1.2em;
+  color: white;
+}
+
+.topbar .email a .topbar-icon, .topbar .contact a .topbar-icon {
+  margin-right: 1em;
+}
+
+.socials .facebook {
+  background-color: #3b5998 !important;
+}
+
+.socials .youtube {
+  background-color: #c4302b !important;
+}
+
+.socials .twitter {
+  background-color: #1DA1F2 !important;
+}
+
+.socials .pinterest {
+  background-color: #c8232c !important;
+}
+
+.socials .instagram {
+  background-color: #c13584 !important;
+}
 /*# sourceMappingURL=main.css.map */

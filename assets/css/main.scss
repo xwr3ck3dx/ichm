@@ -572,3 +572,45 @@ button:focus{
         }
     }
 }
+
+.blog{
+    .card{
+        margin-bottom:20px;
+        .col-sm-3{
+            padding:0;
+        }
+    }
+}
+
+.topbar{
+    background:black;
+    .email ,.contact{
+        float: right;
+        padding:4px;
+        
+        margin-right:2em;
+        a{
+            font-size:1.2em;
+            color:white;
+            .topbar-icon{
+                margin-right:1em;
+            }
+        }
+    }
+    
+}
+.socials .facebook{
+    background-color:#3b5998!important;
+}
+.socials .youtube{
+    background-color:#c4302b!important;
+}
+.socials .twitter{
+    background-color:#1DA1F2!important;
+}
+.socials .pinterest{
+    background-color:#c8232c!important;
+}
+.socials .instagram{
+    background-color:#c13584!important;
+}
